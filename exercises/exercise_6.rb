@@ -8,12 +8,14 @@ require_relative './exercise_5'
 puts "Exercise 6"
 puts "----------"
 
+@store1.employees.create(first_name: 'Lila', last_name: 'Dude', hourly_rate: 20)
 
+@store1.employees.create(first_name: 'Justin', last_name: 'Spinach', hourly_rate: 12)
 
-# 1. Borrowing and modifying the code from Exercise one, create 3 more stores:
-#   * Surrey (annual_revenue of 224000, carries women's apparel only)
-#   * Whistler (annual_revenue of 1900000 carries men's apparel only)
-#   * Yaletown (annual_revenue of 430000 carries men's and women's apparel)
-# 2. Using the `where` class method from Active Record, fetch (a collection of) only those stores that carry men's apparel. Assign the results to a variable `@mens_stores`.
-# 3. Loop through each of these stores and output their name and annual revenue on each line.
-# 4. Do another fetch but this time load stores that carry women's apparel and are generating less than $1M in annual revenue.
+@store2.employees.create(first_name: 'Joe', last_name: 'Bloke', hourly_rate: 22)
+
+@store2.employees.create(first_name: 'Fanny', last_name: 'Lady', hourly_rate: 32)
+
+@store2.employees.create(first_name: 'Tom', last_name: 'Welling', hourly_rate: 3)
+
+@store2.employees.create(first_name: 'Tiffany', last_name: 'Fancy', hourly_rate: 26)
